@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="300dp"
+    android:layout_height="wrap_content"
+    android:background="@color/design_default_color_secondary"
+    android:paddingLeft="21dp"
+    android:paddingRight="21dp"
+    android:paddingBottom="11dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="Add ToDo"
+        android:textSize="32sp"
+        android:textStyle="bold"
+        android:textColor="#fff"
+        android:id="@+id/txtTitle"
+        android:layout_margin="21dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Title"
+        android:background="#fff"
+        android:padding="11dp"
+        android:id="@+id/edtTitle"
+        android:layout_marginBottom="11dp"
+        android:inputType="text"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter Description"
+        android:background="#fff"
+        android:padding="11dp"
+        android:id="@+id/edtDesc"
+        android:layout_marginBottom="11dp"
+        android:inputType="text"/>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal">
+    <TextView
+        android:layout_width="220dp"
+        android:layout_height="wrap_content"
+        android:background="#fff"
+        android:text="Date"
+        android:textSize="20sp"
+        android:padding="11dp"
+
+        android:id="@+id/txtDate"
+
+        />
+
+
+
+    <!--on below line we are creating
+        a button for date picker-->
+    <ImageView
+        android:id="@+id/idBtnPickDate"
+        android:layout_width="40dp"
+        android:layout_height="50dp"
+        android:src="@drawable/ic_baseline_date_range_24" />
+
+</LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+        <TextView
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:background="#fff"
+            android:text="Time"
+            android:textSize="20sp"
+            android:padding="11dp"
+
+            android:id="@+id/txtTime"
+
+            />
+
+
+
+        <!--on below line we are creating
+            a button for date picker-->
+        <ImageView
+            android:id="@+id/idBtnPickTime"
+            android:layout_width="40dp"
+            android:layout_height="50dp"
+            android:src="@drawable/ic_baseline_timer_24" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"
+        android:id="@+id/btnAdd"
+        android:backgroundTint="#0F4147"
+        android:layout_marginTop="11dp"
+        android:textColor="@color/design_default_color_secondary"
+        android:layout_gravity="end"/>
+
+</LinearLayout>
